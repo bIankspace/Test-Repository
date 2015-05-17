@@ -1,0 +1,8 @@
+public class Karel
+{
+int cats;
+public Karel(int a)
+{
+cats=a;
+}
+}
