@@ -1,0 +1,44 @@
+public class Flashlight        {
+   private int time;
+   private int charge;
+   public Flashlight()
+   {
+      time = 60;
+      charge = 100;
+   }
+   public int getTime()
+   {
+      return time;
+   }
+   public void setTime(int newtime)
+   {
+      time = newtime;
+   }
+   public int getCharge()
+   {
+      return charge;
+   }
+   public void setCharge(int newcharge)
+   {
+      charge = newcharge;
+   }
+   public void decrement()
+   {
+      time=time-10;
+      charge=charge-10;
+   }
+   public void increment()
+   {
+      time = time+5;
+   }
+   public boolean death() {
+      if (time == 0) {
+         return true;
+      }
+      else if(charge==0) {
+         return true;
+      
+      }
+      return false;
+   }
+}
